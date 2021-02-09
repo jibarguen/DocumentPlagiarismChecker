@@ -17,6 +17,7 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
     /// El comparador de paràmetres de comptador de paraules llegeix un parell de fitxers i compta quantes paraules i quantes vegades apareixen a cada paràgraf dins d’un fitxer i
     /// llavors calcula quantes d'aquestes aparicions coincideixen entre documents. Per tant, dos documents amb la mateixa quantitat dels mateixos paràgrafs i
     /// les paraules poden ser una còpia amb un alt nivell de probabilitat.
+    /// 999999999999999999996
     /// </summary>
     /// <typeparam name="Document"></typeparam>
     internal class Comparator: Core.BaseComparator<Document>
@@ -36,7 +37,7 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
         /// </summary>
         /// <returns>Els resultats de la coincidència</returns>
         public override ComparatorMatchingScore Run(){     
-            // Aquest ordre està destinat a millorar el rendiment
+         // Aquest ordre està destinat a millorar el rendiment
             ExcludeSampleExactMatches(); 
             ExcludeSamplePartialMatches(this.Left, 0.70f);   // TOT: el valor del llindar ha de ser obtenir de la configuració; comproveu si es pot eliminar
             ExcludeSamplePartialMatches(this.Right, 0.70f);  // TOT: el valor del llindar ha de ser obtenir de la configuració; comproveu si es pot eliminar
