@@ -18,6 +18,7 @@ namespace DocumentPlagiarismChecker.Comparators.ParagraphWordCounter
     /// llavors calcula quantes d'aquestes aparicions coincideixen entre documents. Per tant, dos documents amb la mateixa quantitat dels mateixos paràgrafs i
     /// les paraules poden ser una còpia amb un alt nivell de probabilitat.
     /// 999999999999999999996
+    ///holi
     /// </summary>
     /// <typeparam name="Document"></typeparam>
     internal class Comparator: Core.BaseComparator<Document>
